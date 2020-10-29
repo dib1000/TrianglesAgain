@@ -19,7 +19,10 @@ public class Tester {
     Triangle tEquil = new Triangle(0.1,0.1,-1.9,0.1,-0.9,-1.632051);
     Triangle tIsos = new Triangle(6.66667,5.048,3.6667,5.04799,3.6669,2.04799);
     System.out.println(tSca.getPerimeter());
+    System.out.println(tSca.getArea());
     System.out.println(tIsos.getPerimeter());
+    System.out.println(tIsos.getArea());
     System.out.println(tEquil.getPerimeter());
+    System.out.println(tEquil.getArea());
   }
 }

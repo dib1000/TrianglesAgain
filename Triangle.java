@@ -16,4 +16,11 @@ public class Triangle {
     double sideThree = v3.distanceTo(v1);
     return sideOne + sideTwo + sideThree;
   }
+  public double getArea() {
+    double sideOne = v1.distanceTo(v2);
+    double sideTwo = v2.distanceTo(v3);
+    double sideThree = v3.distanceTo(v1);
+    double s = getPerimeter()/2;
+    return Math.sqrt(s*(s-sideOne)*(s-sideTwo)*(s-sideThree));
+  }
 }
