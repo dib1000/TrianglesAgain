@@ -25,4 +25,7 @@ public class Point{
     double ydif = y - other.y;
     return Math.sqrt((xdif*xdif)+(ydif*ydif));
   }
+  public boolean equals(Point other) {
+    return x == other.x && y == other.y;
+  }
 }
