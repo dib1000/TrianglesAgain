@@ -10,4 +10,10 @@ public class Triangle {
     v2 = new Point(x2,y2);
     v3 = new Point(x3,y3);
   }
+  public double getPerimeter() {
+    double sideOne = v1.distanceTo(v2);
+    double sideTwo = v2.distanceTo(v3);
+    double sideThree = v3.distanceTo(v1);
+    return sideOne + sideTwo + sideThree;
+  }
 }
