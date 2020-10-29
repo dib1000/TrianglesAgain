@@ -11,6 +11,7 @@ public class Tester {
     System.out.println();
     Triangle t1 = new Triangle(p1,p2,p4);
     Triangle t2 = new Triangle(0.0,2.0,2.0,0.0,2.0,2.0);
+    Triangle t3 = new Triangle(p3,p2,p4);
     System.out.println(t1.toString());
     System.out.println(t2.toString());
 
@@ -27,5 +28,14 @@ public class Tester {
     System.out.println(tEquil.getPerimeter());
     System.out.println(tEquil.getArea());
     System.out.println(tEquil.classify());
+
+    System.out.println();
+    Point p5 = new Point(45.3,45.3);
+    t1.setVertex(0,p5);
+    System.out.println(t1);
+    t2.setVertex(1,p5);
+    System.out.println(t2);
+    t3.setVertex(2,p5);
+    System.out.println(t3);
   }
 }
